@@ -15,5 +15,8 @@
   },
   "dependencies": {
     "simple-oauth2": "^1.4.0"
-  }
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
 }
