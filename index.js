@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const simpleOauthModule = require('./../');
+const simpleOauthModule = require("simple-oauth2");
 
 const app = express();
 const oauth2 = simpleOauthModule.create({

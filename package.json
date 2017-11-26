@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "express": "^4.16.2"
+  },
+  "dependencies": {
+    "simple-oauth2": "^1.4.0"
   }
 }
