@@ -4,11 +4,11 @@ const express = require('express');
 const simpleOauthModule = require("simple-oauth2");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const oauth2 = simpleOauthModule.create({
   client: {
-    id: '<CLIENT_ID>',
-    secret: '<CLIENT_SECRET>',
+    id: process.env.CLIENT_ID,
+    secret: process.env.CLIENT_SECRET,
   },
   auth: {
     tokenHost: 'https://github.com',
@@ -19,7 +19,7 @@ const oauth2 = simpleOauthModule.create({
 
 // Authorization uri definition
 const authorizationUri = oauth2.authorizationCode.authorizeURL({
-  redirect_uri: 'http://localhost:3000/callback',
+  redirect_uri: 'https://gitdash21.herokuapp.com/callback',
   scope: 'notifications',
   state: '3(#0/!~',
 });
