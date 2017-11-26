@@ -10,10 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "express": "^4.16.2"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "express": "^4.16.2",
     "simple-oauth2": "^1.4.0"
   },
   "engines": {
