@@ -4,6 +4,7 @@ const express = require('express');
 const simpleOauthModule = require("simple-oauth2");
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 const oauth2 = simpleOauthModule.create({
   client: {
     id: '<CLIENT_ID>',
@@ -59,7 +60,7 @@ app.get('/', (req, res) => {
   res.send('Hello<br><a href="/auth">Log in with Github</a>');
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('Express server started on port 3000'); // eslint-disable-line
 });
 
