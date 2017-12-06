@@ -19,7 +19,7 @@ const oauth2 = simpleOauthModule.create({
 
 // Authorization uri definition
 const authorizationUri = oauth2.authorizationCode.authorizeURL({
-  redirect_uri: 'https://gitdash-alphauth.herokuapp.com/callback',
+  redirect_uri: 'https://gitdash-alpha.herokuapp.com/callback',
   scope: 'notifications',
   state: '3(#0/!~',
 });
